@@ -1,12 +1,11 @@
 import './index.scss'
 import { useState } from 'react'
-import LogoK from '../../assets/images/logo-k.png'
+import LogoKBlk from '../../assets/images/logo-k-blk.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faLinkedin,
   faGithub,
-  faYoutube,
   faInstagram,
 } from '@fortawesome/free-brands-svg-icons'
 import {
@@ -28,8 +27,8 @@ const Sidebar = () => {
         className="logo"
         to="/"
         onClick={() => setShowNav(false)}>
-        <img src={LogoK} alt="Logo" />
-        <img className="sub-logo" src={LogoSubtitle} alt="vongerichten" />
+        <img src={LogoKBlk} alt="Logo" />
+        <img className="sub-logo" src={LogoSubtitle} alt="kristen" />
       </Link>
       <nav className={showNav ? 'mobile-show' : ''}>
         <NavLink 

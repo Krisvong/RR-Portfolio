@@ -52,7 +52,7 @@
         margin-bottom: 40px;
         left: -10px;
   
-        &:before {
+        &::before {
           content: '<h1>';
           font-family: 'La Belle Aurore', cursive;
           color: #ffd700;
@@ -64,7 +64,7 @@
           line-height: 18px;
         }
   
-        &:after {
+        &::after {
           content: '<h1/>';
           font-family: 'La Belle Aurore', cursive;
           color: #ffd700;
