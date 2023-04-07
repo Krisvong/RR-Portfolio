@@ -17,6 +17,7 @@
       margin: 0;
       font-family: 'Coolvetica';
       font-weight: 400;
+      white-space: nowrap;
   
       &::before {
         content: '<h1>';
@@ -57,7 +58,7 @@
       font-weight: 400;
       font-size: 11px;
       font-family: sans-serif;
-      letter-spacing: 3px;
+      letter-spacing: 4px;
       animation: fadeIn 1s 1.8s backwards;
     }
   

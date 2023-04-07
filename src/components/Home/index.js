@@ -13,13 +13,10 @@ const Home = () => {
   const jobArray = [
     'I',
     ' ',
-    ' ',
     'a',
     'm',
     ' ',
-    ' ',
     'a',
-    ' ',
     ' ',
     'S',
     'o',
@@ -29,7 +26,6 @@ const Home = () => {
     'a',
     'r',
     'e',
-    ' ',
     ' ',
     'D',
     'e',
@@ -41,11 +37,8 @@ const Home = () => {
     'e',
     'r',
     ' ',
-    ' ',
     'i',
     'n',
-    ' ',
-    ' ',
     ' ',
     't',
     'r',
@@ -58,11 +51,16 @@ const Home = () => {
     '!',
   ]
 
-  // useEffect(() => {
-  //   return setTimeout(() => {
-  //     setLetterClass('text-animate-hover')
-  //   }, 4000)
-  // }, [])
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setLetterClass('text-animate-hover')
+    }, 4000);
+  
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, []);
+  
 
   return (
     <>
@@ -73,21 +71,19 @@ const Home = () => {
             <span className={`${letterClass} _12`}>i!</span>
             <br />
             <span className={`${letterClass} _13`}>M</span>
-            <span className={`${letterClass} _13`}>y</span>
+            <span className={`${letterClass} _14`}>y</span>
 
-            <span className={`${letterClass} _13`}></span>
-            <span className={`${letterClass} _13`}></span>
+            <span className={`${letterClass} _15`}></span>
+          
+            <span className={`${letterClass} _17`}>N</span>
+            <span className={`${letterClass} _18`}>a</span>
+            <span className={`${letterClass} _19`}>m</span>
+            <span className={`${letterClass} _20`}>e</span>
 
-            <span className={`${letterClass} _13`}>N</span>
-            <span className={`${letterClass} _13`}>a</span>
-            <span className={`${letterClass} _13`}>m</span>
-            <span className={`${letterClass} _13`}>e</span>
-
-            <span className={`${letterClass} _14`}></span>
-            <span className={`${letterClass} _13`}></span>
-            
-            <span className={`${letterClass} _14`}>i</span>
-            <span className={`${letterClass} _14`}>s</span>
+            <span className={`${letterClass} _21`}></span>
+           
+            <span className={`${letterClass} _23`}>i</span>
+            <span className={`${letterClass} _24`}>s</span>
             
             <img
               src={LogoTitle}

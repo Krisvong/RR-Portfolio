@@ -1,11 +1,13 @@
+@use "sass:math";
+
 .text-animate {
     display: inline-block;
     opacity: 0;
     animation: bounceIn;
-    animation-duration: 1s;
+    animation-duration: 3s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
-    min-width: 10px;
+    min-width: 12px;
   }
   
   .text-animate-hover {
@@ -19,8 +21,12 @@
     }
   }
   
-  @for $i from 1 through 35 {
+  @for $i from 1 through 100 {
     .text-animate._#{$i} {
-      animation-delay: #{$i / 10}s;
+      animation-delay: $i * 0.06s;
+    }
+    .text-animate._#{$i}:last-child {
+      animation-delay: ($i * 0.06s) + 0.2s; /* Add 0.2s extra delay for the last letter */
     }
   }
+  
