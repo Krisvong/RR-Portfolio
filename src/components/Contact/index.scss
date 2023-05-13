@@ -77,8 +77,9 @@
   background: rgba(8, 253, 216, 0.1);
   float: right;
   width: 53%;
-  height: 115%;
-  margin-top: -3%;
+  height: 100%;
+  margin-top: -.5%;
+  margin-right: 20px; /* Add margin to the right side */
 }
 
 .leaflet-container {
@@ -90,14 +91,18 @@
   animation-fill-mode: forwards;
 }
 
+.leaflet-popup-content{
+  text-align: center;
+}
+
 .info-map {
   position: absolute;
   background: #000;
   top: 50px;
   right: 30%;
   z-index: 999999;
-  width: 267px;
-  padding: 20px;
+  width: 200px;
+  padding: 5px;
   color: #fff;
   font-family: 'Helvetica';
   font-size: 17px;
@@ -105,6 +110,7 @@
   opacity: 0;
   animation: fadeIn 1s 1.5s;
   animation-fill-mode: forwards;
+  text-align: center;
 
   span {
     font-size: 16px;
@@ -114,6 +120,10 @@
     }
   }
 }
+
+// .container.contact-page p {
+//   text-align: center;
+// }
 
 @media screen and (max-width: 1200px) {
   .map-wrap {
